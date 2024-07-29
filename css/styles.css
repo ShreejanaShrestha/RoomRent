@@ -1,0 +1,76 @@
+.navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+a.navbar-brand {
+    color: #228B22;
+    font-weight: 700;
+}
+
+#header-wrapper a.nav-link {
+    color: #000;
+    font-weight: 700;
+    font-family: cursive;
+}
+
+.newsbanner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/bg-3.jpg);
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 60px;
+    height: 600px;
+}
+
+.rental-parallax-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.rental-newsletter-subscribe .newsletter-subscription input[type="email"]{
+    padding: 20px 2%;
+    height: 16px;
+    width: 530px;
+    margin-right: 10px;
+    font-size: 15px;
+    max-width: 96%;
+}
+
+.rental-button {
+    display: inline-block;
+    font-size: 12px;
+    padding: 14px 27px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    letter-spacing: 1px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.carded {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+.avatar {
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+#footer-wrapper .container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#footer-wrapper ul {
+    display: block;
+}

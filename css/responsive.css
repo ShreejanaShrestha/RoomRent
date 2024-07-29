@@ -1,0 +1,31 @@
+
+
+@media all and (max-width: 1600px) {
+    /*------------------------------------ Site Wide Starts -----------------------------------*/
+    .custom-container {
+      padding: 65px 180px; }
+      .custom-container.small-padding {
+        padding-top: 65px;
+        padding-bottom: 65px; }
+  
+    /*------------------------------------- Site Wide Ends ------------------------------------*/
+    /*--------------------------------- Header Wrapper Starts ---------------------------------*/
+    /*--------------------------------- Header Wrapper Starts ---------------------------------*/
+    /*-------------------------------- Content Wrapper Starts ---------------------------------*/
+    h1 {
+      font-size: 28px; }
+  
+    .section-title.common-title-space {
+      padding-bottom: 65px; }
+    .section-title h1 {
+      margin-bottom: 45px; }
+  
+    /*--------------------------------- Content Wrapper Ends ----------------------------------*/
+    /*--------------------------------- Footer Wrapper Starts ---------------------------------*/
+    /*---------------------------------- Footer Wrapper Ends ----------------------------------*/
+    /*----------------------------------- Components Starts -----------------------------------*/
+    .common-description-section .section-content .common-description-container .common-item-block.add-bottom-padding {
+      padding-bottom: 65px; }
+  
+    /*------------------------------------ Components Ends ------------------------------------*/
+}

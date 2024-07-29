@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!------------------- Fonts Awesome Starts ------------------>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-------------------- Fonts Awesome Ends ------------------->
+
+    <!-------------------- Site Style Starts -------------------->
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!--------------------- Site Style Ends --------------------->
+
+    <!-------------------- Bootstrap Starts -------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!--------------------- Bootstrap Ends --------------------->
+    <script src="https://kit.fontawesome.com/50d01499be.js" crossorigin="anonymous"></script>
+    <style>
+        .navbar-custom {
+          background-color: #00a003;
+        }
+        .footer-custom {
+          background-color: #3e3e3e;
+        }
+      </style>
+</head>
+
+<body>
+    <!-------------------- Wrapper Starts -------------------->
+    <div id="wrapper">
+        <!-------------------- Header Wrapper Starts ------------------>
+        <header id="header-wrapper">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand" href="#">RoomRent</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="room-list.html">Room List</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="room-selected.html">Room Selected</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="login.html">Login/Signup</a>
+                        </li>
+                        <li class="nav-item">
+                          <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                          </form>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+            </div>
+           
+        </header>
+        <!-------------------- Header Wrapper Ends -------------------->
+
+        <!-------------------- Content Wrapper Starts ----------------->
+        <div id="content-wrapper">
+            <div id="home-page">
+                <section class="banner-section">
+                    <div class="custom-container">
+                        <div class="banner-container">
+
+                        </div>
+                    </div>
+                </section>
+                <section class="testimonials py-5">
+                  <div class="container">
+                    <h2 class="text-center mb-5">Testimonials</h2>
+                    <div class="row">
+                      <div class="col-lg-4 mb-4 d-flex">
+                        <div class="carded p-3">
+                          <div class="testimonial text-center">
+                            <img src="images/img_avatar.png" alt="Person 1" class="img-fluid mb-3 avatar" style="width: 150px; height: 150px;">
+                            <p class="mb-1">"This is a fantastic service! Highly recommended."Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias distinctio temporibus sit voluptate non error sunt velit ut deserunt nobis.</p>
+                            <p class="font-weight-bold mb-0">John Doe</p>
+                            <p class="text-muted">Company A</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 mb-4 d-flex">
+                        <div class="carded p-3">
+                          <div class="testimonial text-center">
+                            <img src="images/img_avatar.png" alt="Person 2" class="img-fluid mb-3 avatar" style="width: 150px; height: 150px;">
+                            <p class="mb-1">"Amazing experience, I found the perfect room."Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero et maxime aut minus laudantium obcaecati?</p>
+                            <p class="font-weight-bold mb-0">Jane Smith</p>
+                            <p class="text-muted">Company B</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 mb-4 d-flex">
+                        <div class="carded p-3">
+                          <div class="testimonial text-center">
+                            <img src="images/img_avatar.png" alt="Person 3" class="img-fluid mb-3 avatar" style="width: 150px; height: 150px;">
+                            <p class="mb-1">"Very easy to use and great customer service."Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt in ducimus dicta delectus molestias qui animi saepe? Mollitia at vero totam iusto in error.</p>
+                            <p class="font-weight-bold mb-0">Sam Wilson</p>
+                            <p class="text-muted">Company C</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="newsletter">
+                    <div class="newsbanner rental-parallax-wrapper">
+                        <div class="container">
+                            <div class="news-title-item mb-4">
+                                <div class="news-title-item-container container">
+                                    <div class="news-item-title-head">
+                                        <h3 class="text-center text-white">Subscribe To Newsletter</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rental-newsletter-subscribe text-center">
+                                <div class="newsletter newsletter-subscription">
+                                    <form method="POST" action="" onsubmit="return newsletter_check(this)">
+                                        <input type="email" class="newsletter-email" name="emailField" id="emailField" size="30" required="" placeholder="Please fill your email" style="height: 56px">
+                                        <button class="newsletter-submit rental-button olabtn" type="submit" value="Subscribe!" style="height: 56px; font-weight: bold">
+                                          Subscribe!
+                                        </button>
+                                      </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-------------------- Content Wrapper Ends ----------------->
+
+        <!-------------------- Footer Wrapper Starts ------------------>        
+          <footer id="footer-wrapper" class="footer-custom text-center text-lg-start mt-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                  <h5 class="text-uppercase text-white">RoomRent</h5>
+                  <p class="text-white">
+                    Find your perfect room with us. We offer a variety of rooms to suit your needs and preferences.
+                  </p>
+                </div>
+        
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase text-white">Links</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">
+                      <a href="index.html" class="text-white">Home</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="about.html" class="text-white">About Us</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="room-list.html" class="text-white">Room List</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="room-selected.html" class="text-white">Room Selected</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="login.html" class="text-white">Login/Signup</a>
+                    </li>
+                  </ul>
+                </div>
+        
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase text-white">Contact</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">
+                      <p class="text-white mb-0">Email: info@roomrent.com</p>
+                    </li>
+                    <li class="mb-2">
+                      <p class="text-white mb-0">Phone: +123 456 7890</p>
+                    </li>
+                  </ul>
+                </div>
+        
+                <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                  <h5 class="text-uppercase text-white">Follow Us</h5>
+                  <ul class="list-unstyled d-flex justify-content-around">
+                    <li>
+                      <a href="https://www.facebook.com" class="text-white">
+                        <img src="https://img.icons8.com/ios-filled/24/ffffff/facebook--v1.png" alt="Facebook">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.twitter.com" class="text-white">
+                        <img src="https://img.icons8.com/ios-filled/24/ffffff/twitter.png" alt="Twitter">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com" class="text-white">
+                        <img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png" alt="Instagram">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com" class="text-white">
+                        <img src="https://img.icons8.com/ios-filled/24/ffffff/linkedin.png" alt="LinkedIn">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        
+            <div class="text-center p-3 footer-bottom text-white bg-dark">
+              © 2024 RoomRent. All rights reserved.
+            </div>
+          </footer>
+        <!-------------------- Footer Wrapper Ends -------------------->
+
+    </div>
+    <!-------------------- Wrapper Ends -------------------->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

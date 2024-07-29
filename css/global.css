@@ -1,0 +1,180 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: "Arial";
+    font-size: 16px;
+    font-weight: 300;
+    color: #58585b;
+    line-height: 1.5em;
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 35px;
+    margin-bottom: 25px;
+    font-family: "Avenir LT Std Heavy";
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 25px;
+    font-family: "Avenir LT Std Roman";
+}
+
+p {
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+p:last-of-type {
+    margin-bottom: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+#wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.custom-container {
+    padding: 70px 375px;
+    max-width: 1920px;
+    margin: auto;
+}
+
+.custom-container .small-width-container {
+    max-width: 1200px;
+}
+
+.custom-container .small-medium-container {
+    max-width: 1500px;
+}
+
+.custom-container.small-padding {
+    padding-top: 63px;
+    padding-bottom: 63px;
+}
+
+.custom-container.remove-top-bottom {
+    padding-top: 0px;
+    padding-bottom: 0;
+}
+
+.ar-btn {
+    display: inline-block;
+    width: auto !important;
+    outline: none;
+    padding: 0 30px;
+    background-color: #212529;
+    border: 1px solid #212529;
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.ar-btn.cf-btn {
+    background-color: #c2002f;
+    border: 0;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-family: "Avenir LT Std Roman";
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-title.common-title-space {
+    padding-bottom: 70px;
+}
+
+.section-title.white-text {
+    color: #ffff;
+}
+
+.section-title.move-left {
+    text-align: left;
+}
+
+.section-title h1 {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #003b70;
+}
+
+.section-title h1:after {
+    content: '';
+    background-color: #003b70;
+    width: 72px;
+    height: 2px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+
+.section-title p {
+    text-align: center;
+    color: #58585b;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
