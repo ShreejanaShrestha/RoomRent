@@ -62,3 +62,14 @@ $(window).on('scroll', function() {
     var scrollPercent = (scrollTop / (docHeight - winHeight)) * 100;
     $('#progress-bar').css('width', scrollPercent + '%');
   });
+
+  $('#search-form').on('submit', function(event) {
+    event.preventDefault();
+    const query = $('#search-input').val();
+    if (query) {
+        alert('Searching for: ' + query);
+        // Replace the alert with actual search logic
+    } else {
+        alert('Please enter a search term.');
+    }
+});

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>RoomRent</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!------------------- Fonts Awesome Starts ------------------>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-------------------- Fonts Awesome Ends ------------------->
+
+    <!-------------------- Site Style Starts -------------------->
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!--------------------- Site Style Ends --------------------->
+
+    <!-------------------- Bootstrap Starts -------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--------------------- Bootstrap Ends --------------------->
+
+    <script src="https://kit.fontawesome.com/50d01499be.js" crossorigin="anonymous" async></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" async></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+    <!-- GSAP and ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+
+</head>
+
+<body>
+    <!-------------------- Wrapper Starts -------------------->
+    <div id="wrapper">
+        <!-------------------- Header Wrapper Starts ------------------>
+        <header id="header-wrapper">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark ">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo-home.png" alt="RoomRent" style="height: 60px;">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-us.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="room-list.html">Room List</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="room-selected.html">Room Selected</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Login/Signup</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="search-form">
+                                    <form id="search-form" class="form-inline my-2 my-lg-0">
+                                        <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                            aria-label="Search" id="search-input" required>
+                                        <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div id="progress-bar"></div>
+        <!-------------------- Header Wrapper Ends -------------------->
+
+        <!-------------------- Content Wrapper Starts ----------------->
+        <div id="content-wrapper">
+            <div id="about-us-page">
+                <section id="about-banner">
+                    <div class="container py-4">
+                        <div class="banner-content">
+                            <h1>About Us</h1>
+
+                        </div>
+                    </div>
+                </section>
+                <section class="about-us py-5">
+                    <div class="container">
+                        <!-- <h2 class="text-center mb-5 title-head">About Us</h2> -->
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="about-image">
+                                    <img src="images/about-us.jpg" class="img-fluid rounded shadow-lg" alt="About Us">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <h3>Our Mission</h3>
+                                <p>We strive to provide the best service and quality in the industry. Our mission is to
+                                    ensure our clients find their perfect homes effortlessly and enjoyably. With a team
+                                    of dedicated professionals, we aim to exceed expectations and deliver exceptional
+                                    results.</p>
+                                <h3>Our Values</h3>
+                                <ul>
+                                    <li><strong>Integrity:</strong> We uphold the highest standards of honesty and
+                                        transparency in all our dealings.</li>
+                                    <li><strong>Excellence:</strong> We are committed to delivering outstanding service
+                                        and exceptional results.</li>
+                                    <li><strong>Innovation:</strong> We continuously seek new ways to enhance our
+                                        services and stay ahead of industry trends.</li>
+                                    <li><strong>Customer Satisfaction:</strong> Our clients' needs and satisfaction are
+                                        our top priorities.</li>
+                                </ul>
+                            </div>
+                        </div>
+                </section>
+                <section class="our-team">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h3 class="title-head">Our Team</h3>
+                            <div class="team-group-image mb-4">
+                                <!-- <img src="images/our-team.jpg" class="img-fluid rounded shadow-lg" alt="Our Team"> -->
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+                        <h3 class="text-color"><em>Meet the talented individuals behind our success. Each team member
+                                brings unique skills and experiences to ensure the highest level of service.</em></h3>
+
+                        <div class="team-members py-5">
+                            <div class="row mt-5">
+                                <div class="col-md-4 mb-4">
+                                    <div class="card border-0 shadow-lg team-card text-center">
+                                        <img src="images/testimonial1.jpg" class="card-img-top rounded-circle mb-3"
+                                            alt="Team Member 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Jane Doe</h5>
+                                            <p class="card-text">CEO & Founder</p>
+                                            <p class="text-muted">Jane has over 15 years of experience in the real
+                                                estate industry and is passionate about helping clients find their dream
+                                                homes.</p>
+                                        </div>
+                                        <a href="https://www.linkedin.com/in/janedoe" target="_blank"
+                                            class="btn btn-primary">LinkedIn</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card border-0 shadow-lg team-card text-center">
+                                        <img src="images/testimonial2.jpg" class="card-img-top rounded-circle mb-3"
+                                            alt="Team Member 2">
+                                        <div class="card-body">
+                                            <h5 class="card-title">John Smith</h5>
+                                            <p class="card-text">Lead Agent</p>
+                                            <p class="text-muted">John is a dedicated agent with a knack for
+                                                understanding clients' needs and delivering top-notch service.</p>
+                                        </div>
+                                        <a href="https://www.linkedin.com/in/janedoe" target="_blank"
+                                            class="btn btn-primary">LinkedIn</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card border-0 shadow-lg team-card text-center">
+                                        <img src="images/testimonial1.jpg" class="card-img-top rounded-circle mb-3"
+                                            alt="Team Member 3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Alice Johnson</h5>
+                                            <p class="card-text">Marketing Specialist</p>
+                                            <p class="text-muted">Alice brings creativity and strategic thinking to our
+                                                marketing efforts, ensuring our services reach the right audience.</p>
+                                        </div>
+                                        <a href="https://www.linkedin.com/in/janedoe" target="_blank"
+                                            class="btn btn-primary">LinkedIn</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-5 ">
+                                <div class="col-md-4 mb-4">
+                                    <div class="card border-0 shadow-lg team-card text-center">
+                                        <img src="images/testimonial1.jpg" class="card-img-top rounded-circle mb-3"
+                                            alt="Team Member 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Jane Doe</h5>
+                                            <p class="card-text">CEO & Founder</p>
+                                            <p class="text-muted">Jane has over 15 years of experience in the real
+                                                estate industry and is passionate about helping clients find their dream
+                                                homes.</p>
+                                        </div>
+                                        <a href="https://www.linkedin.com/in/janedoe" target="_blank"
+                                            class="btn btn-primary">LinkedIn</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card border-0 shadow-lg team-card text-center">
+                                        <img src="images/testimonial2.jpg" class="card-img-top rounded-circle mb-3"
+                                            alt="Team Member 2">
+                                        <div class="card-body">
+                                            <h5 class="card-title">John Smith</h5>
+                                            <p class="card-text">Lead Agent</p>
+                                            <p class="text-muted">John is a dedicated agent with a knack for
+                                                understanding clients' needs and delivering top-notch service.</p>
+                                        </div>
+                                        <a href="https://www.linkedin.com/in/janedoe" target="_blank"
+                                            class="btn btn-primary">LinkedIn</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card border-0 shadow-lg team-card text-center">
+                                        <img src="images/testimonial1.jpg" class="card-img-top rounded-circle mb-3"
+                                            alt="Team Member 3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Alice Johnson</h5>
+                                            <p class="card-text">Marketing Specialist</p>
+                                            <p class="text-muted">Alice brings creativity and strategic thinking to our
+                                                marketing efforts, ensuring our services reach the right audience.</p>
+                                        </div>
+                                        <a href="https://www.linkedin.com/in/janedoe" target="_blank"
+                                            class="btn btn-primary">LinkedIn</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+            </div>
+        </div>
+        <!-------------------- Content Wrapper Ends ------------------->
+
+        <!-------------------- Footer Wrapper Starts ----------------->
+        <footer id="footer-wrapper" class="footer-custom text-center text-lg-start">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase text-white">RoomRent</h5>
+                        <p class="text-white">
+                            Find your perfect room with us. We offer a variety of rooms to suit your needs and
+                            preferences.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase text-white">Links</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="index.html" class="text-white">Home</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="about.html" class="text-white">About Us</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="room-list.html" class="text-white">Room List</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="room-selected.html" class="text-white">Room Selected</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="login.html" class="text-white">Login/Signup</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase text-white">Contact</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <p class="text-white mb-0">Email: info@roomrent.com</p>
+                            </li>
+                            <li class="mb-2">
+                                <p class="text-white mb-0">Phone: +123 456 7890</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase text-white">Follow Us</h5>
+                        <ul class="list-unstyled d-flex justify-content-around">
+                            <li>
+                                <a href="https://www.facebook.com" class="text-white">
+                                    <img src="https://img.icons8.com/ios-filled/24/ffffff/facebook--v1.png"
+                                        alt="Facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.twitter.com" class="text-white">
+                                    <img src="https://img.icons8.com/ios-filled/24/ffffff/twitter.png" alt="Twitter">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com" class="text-white">
+                                    <img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png"
+                                        alt="Instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com" class="text-white">
+                                    <img src="https://img.icons8.com/ios-filled/24/ffffff/linkedin.png" alt="LinkedIn">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center p-3 footer-bottom text-white bg-dark">
+                © 2024 RoomRent. All rights reserved.
+            </div>
+        </footer>
+        <!-------------------- Footer Wrapper Ends -------------------->
+    </div>
+    <!-------------------- Wrapper Ends -------------------->
+
+    <!-------------------- Site Scripts Starts -------------------->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-------------------- Site Scripts Ends -------------------->
+</body>
+
+</html>

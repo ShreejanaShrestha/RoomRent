@@ -196,11 +196,13 @@ ul {
     border-radius: 3px;
     color: white;
     background-color: #00a003;
+    
 }
 .rental-button:hover {
   color: #00a003;
   background-color: #ffffff;
   border-color: #00a003;
+  border: 2px solid rgba(0,160,3, 1);
 }
 
 .title-head {
