@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Details</title>
+    <!------------------- Fonts Awesome Starts ------------------>
+    <!------------------- Fonts Awesome Starts ------------------>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<!-------------------- Fonts Awesome Ends ------------------->
+
+<!-------------------- Site Style Starts -------------------->
+    <link href="../css/global.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
+<!--------------------- Site Style Ends --------------------->
+
+<!-------------------- Bootstrap Starts -------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!--------------------- Bootstrap Ends --------------------->
+
+    <script src="https://kit.fontawesome.com/50d01499be.js" crossorigin="anonymous" async></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" async></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+<!-- GSAP and ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+
+<!-- GSAP and ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+   
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-wrapper"></div>
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="card border-0 shadow-lg featured-card">
+            <img src="../images/living.jpg" class="img-fluid" alt="_blank">
+            <div class="card-body">
+                <div class="card-title">
+                    <span>Spacious Single Room</span>
+                    <button class="btn btn-success btn-availability float-right">Available</button>
+                </div>
+                <p class="card-text"><strong>Description:</strong> A beautifully furnished room with modern amenities, perfect for a comfortable stay.</p>
+                <p class="card-text"><strong>Price:</strong> $420 Per Month</p>
+                <p class="card-text"><strong>Location:</strong> Downtown City Center</p>
+                <p class="card-text"><strong>Room Type:</strong> Single</p>
+                <p class="card-text"><strong>Number of Persons:</strong> 1</p>
+                <p class="card-text"><strong>Gender Preference:</strong> Any</p>
+                <p class="card-text"><strong>Privacy:</strong> Private</p>
+                <p class="card-text"><strong>Date Posted:</strong> August 1, 2024</p>
+                <div class="details">
+                    <p><strong>Additional Information:</strong></p>
+                    <ul>
+                        <li>Free Wi-Fi</li>
+                        <li>Air Conditioning</li>
+                    </ul>
+                </div>
+                <a href="checkout.html" class="btn btn-success">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-wrapper"></div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+          $('#header-wrapper').load('header.html');
+          $('#footer-wrapper').load('footer.html');
+    
+          // Swiper initialization
+          var swiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          });
+        });
+      </script>
+</body>
+</html>

@@ -29,3 +29,15 @@
   
     /*------------------------------------ Components Ends ------------------------------------*/
 }
+
+@media all and (max-width: 1200px) {
+  .swiper-flip {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 991px) {
+.navbar-nav .nav-link::after {
+  width: 100%;
+}
+}

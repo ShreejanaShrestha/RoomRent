@@ -178,3 +178,51 @@ ul {
     display: flex;
     flex-wrap: wrap;
 }
+
+.rental-button {
+    display: inline-block;
+    font-size: 12px;
+    padding: 14px 27px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    height: 56px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    color: white;
+    background-color: #00a003;
+    
+}
+.rental-button:hover {
+  color: #00a003;
+  background-color: #ffffff;
+  border-color: #00a003;
+  border: 2px solid rgba(0,160,3, 1);
+}
+
+.title-head {
+    font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.title-head::after {
+    content: "";
+  width: 60px;
+  height: 4px;
+  background: #00a003;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+}
+
+.text-color {
+    color: #00a003;
+}
